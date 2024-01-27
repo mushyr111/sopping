@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>shopping</title>
+</head>
+<body>
+    <div class="container">
+
+<div class="side">
+    <ul>
+        <li> Sale </li>
+        <li>Bestsellers</li>
+        <li>Latest Arrivals</li>
+    </ul>
+    <ul>
+        <li>
+            <span>SHOSE</span>
+        </li>
+        <li> Life style </li>
+        <li>Running</li>
+        <li>Soccer</li>
+        <li>Bascketball</li>
+        <li>Football</li>
+        <li>Golf</li>
+        <li>Baseball</li>
+    </ul>
+    <ul>
+        <li>
+            <span>CLOTHING</span>
+        </li>
+        <li>Pants</li>
+        <li>Hoodies & Sweatshirts</li>
+        <li>Jackets & Vests</li>
+        <li>Track Suits</li>
+        <li>Short Sleeve Shirts</li>
+        <li>T_shirts</li>
+        <li>Jerseys</li>
+        <li>Shorts</li>
+        <li>jeans</li>
+    </ul>
+    <ul>
+        <li>
+            <span>ACCESORRIES</span>
+        </li>
+        <li>Backpacks</li>
+        <li>Caps & Hats</li>
+        <li>Watches</li>
+        <li>Belts</li>
+        <li>Bags</li>
+        <li>Wallets & Cases</li>
+        <li>Scarves</li>
+        <li>Glasses</li>
+    </ul>
+
+</div>
+
+
+
+
+        <div class="img">
+        </div>
+        <div class="navbar">
+            <div>
+                <h3>E-shop</h3>
+            </div>
+            <div class="list">
+                <ul class="ul">
+                    <li class="list-side">Men</li>
+                    <li class="list-side">Women</li>
+                    <li class="list-side">kids</li>
+                </ul>
+                <i class="fa-solid fa-bars menue none list-side"></i>
+            </div>
+
+            <div class="list">
+                <ul>
+                    <li><i class="fa-brands fa-searchengin"></i></li>
+                    <li class="cartShoping" ><i class="fa-solid fa-cart-shopping"></i><span id="countPro"></span></li>
+                    <li><i class="fa-solid fa-user"></i></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <span id="span0"></span>
+            <span id="span1"></span>
+            <span id="span2"></span>
+        </div>
+
+        <div class="title">
+            <h1>Sale of the summer  collection</h1>
+        </div>
+
+        <div id="shopping" class="shop-now toShop">
+            <i class="fa-solid fa-arrow-right"></i>
+            <div> SHOP NOW</div>
+        </div>
+
+        <div class="foot">
+            <ul>
+                <li>
+                    <i class="fa-solid fa-truck"></i>
+                    <div>
+                        <span>Free Shipping</span>
+                    <p>On purchases ofer $199</p>
+                    </div>
+                    
+                    </li>
+                <li>
+                    <i class="fa-regular fa-face-smile-beam"></i>
+                    <div>
+                        <span>99% Satisfied Customerts</span>
+                    <p>Our clients' opinions <br> spead for themselves</p>
+                    </div>
+                    
+                </li>
+                <li>
+                    <i class="fa-solid fa-file-invoice-dollar"></i>
+                    <div>
+                    <span>Originality Guaranteed</span>
+                    <p>30 days warranty for each <br> product from our store</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="arrows">
+            <div id="prev" class="toLeft">
+                <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <div id="next" class="toRight">
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+
+        </div>
+        <div class="scroll-container">
+            <div class="snap-area"><img class="title-img" src="./imgs/joao.png" alt=""></div>
+            <div class="snap-area"><img class="title-img" src="./imgs/house_island_2-wallpaper-1366x768.jpg" alt=""></div>
+            <div class="snap-area"><img class="title-img" src="./imgs/joao.png" alt=""></div>
+        </div>
+        
+
+
+
+
+
+        <div id="cart" class="cart">
+            <div class="cartTitle">
+                <h1>shoping cart</h1>
+            </div>
+    
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>color</th>
+                        <th>size</th>
+                        <th>annount</th>
+                        <th>price</th>
+                        <th>delete</th>
+                    </tr>
+                </thead>
+    
+                <tbody id="tbody">
+                </tbody>
+            </table>
+    
+    
+            <div class="footCart">
+                <div class="continue cartShoping">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <span>Continue Shopping</span>
+                </div>
+                <input class="inputs" style="border: 1px solid rgb(92, 92, 92);" type="text">
+                <div class="total">total cost: $<apan id="totalCost"></apan></div>
+                <button class="btns">CHCKOUT</button>
+            </div>
+        </div>
+    </div>
+
+        <div class="slider">
+            <div style="background-image: url(./imgs/img1.png);">
+                <h2>New arrivals <br> are now in!</h2>
+                <button>Show collection</button>
+            </div>
+            <div style="background-image: url(./imgs/img22.png);">
+                <h2>Basic t-shirts <br> $29,99</h2>
+                <button>More details</button>
+            </div>
+            <div style="background-image: url(./imgs/img3.jpg);">
+                <h2>Sale this <br> summer</h2>
+                <button>VIEW ALL</button>
+            </div>
+        </div>
+
+        <div class="cont slider-cont">
+            <div id="prev2"> <i class="fa-solid fa-arrow-left"></i></div>
+
+
+
+            <div class="scroll-container scroll-container2">
+                
+                <div class="snap-area scroll-snap">
+                    
+                    <div class="snap-cart isnone">
+                        <img src="./imgs/AdobeStock_118120200.png" alt="">
+                    <div class="type"><p>Loose Knit 3/4 Sleeve</p></div>
+                    <div class="prices">
+                        <h2>$98.99</h2>
+                    </div>
+                    </div>
+                    <div class="snap-cart">
+                        <img src="./imgs/AdobeStock_136908398.png" alt="">
+                    <div class="type"><p>Basic Slim Fit T-Shirt</p></div>
+                    <div class="prices">
+                        <h2>$98.99</h2>
+                    </div>
+                    </div>
+                    <div class="snap-cart">
+                        <img src="./imgs/AdobeStock_173519034.png" alt="">
+                    <div class="type"><p>Loose Textured T-Shirt</p></div>
+                    <div class="prices">
+                        <h2>$98.99</h2>
+                    </div>
+                    </div>
+                    <div class="snap-cart toShop">
+                        <img src="./imgs/AdobeStock_236655481.png" alt="">
+                    <div class="type"><p>T-Shirt Summer Vibes</p></div>
+                    <div class="prices">
+                        <h2>$98.99 <del> $119</del></h2>
+                    </div>
+                    </div>
+                </div>
+
+
+                <div class="snap-area scroll-snap">
+                    <div class="snap-cart isnone"><img src="./imgs/AdobeStock_118120200.png" alt="">
+                    <div class="type"><p>Loose Knit 3/4 Sleeve</p></div>
+                    <div class="prices">
+                        <h2>$98.99</h2>
+                    </div>
+                    </div>
+                    <div class="snap-cart"><img src="./imgs/AdobeStock_136908398.png" alt="">
+                    <div class="type"><p>Basic Slim Fit T-Shirt</p></div>
+                    <div class="prices">
+                        <h2>$98.99</h2>
+                    </div>
+                    </div>
+                    <div class="snap-cart"><img src="./imgs/AdobeStock_173519034.png" alt="">
+                    <div class="type"><p>Loose Textured T-Shirt</p></div>
+                    <div class="prices">
+                        <h2>$98.99</h2>
+                    </div>
+                    </div>
+                    <div class="snap-cart toShop"><img src="./imgs/AdobeStock_236655481.png" alt="">
+                    <div class="type"><p>T-Shirt Summer Vibes</p></div>
+                    <div class="prices">
+                        <h2>$98.99 <del> $119</del></h2>
+                    </div>
+                    </div>
+                </div>
+
+
+                <div class="snap-area scroll-snap">
+                    <div class="snap-cart isnone"><img src="./imgs/AdobeStock_118120200.png" alt="">
+                    <div class="type"><p>Loose Knit 3/4 Sleeve</p></div>
+                    <div class="prices">
+                        <h2>$98.99</h2>
+                    </div>
+                    </div>
+                    <div class="snap-cart"><img src="./imgs/AdobeStock_136908398.png" alt="">
+                    <div class="type"><p>Basic Slim Fit T-Shirt</p></div>
+                    <div class="prices">
+                        <h2>$98.99</h2>
+                    </div>
+                    </div>
+                    <div class="snap-cart"><img src="./imgs/AdobeStock_173519034.png" alt="">
+                    <div class="type"><p>Loose Textured T-Shirt</p></div>
+                    <div class="prices">
+                        <h2>$98.99</h2>
+                    </div>
+                    </div>
+                    <div class="snap-cart toShop"><img src="./imgs/AdobeStock_236655481.png" alt="">
+                    <div class="type"><p>T-Shirt Summer Vibes</p></div>
+                    <div class="prices">
+                        <h2>$98.99 <del>$119</del></h2>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="next2"> <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+
+
+        <div class="container">
+            <div class="navigate">
+                <div class="choosing">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <h3>Free Shipping</h3>
+                    <p>All purchases over $199 are eligible for <br>
+                        free shipping via USPS First Class Mail.</p>
+                </div>
+                <div class="choosing">
+                    <i class="fa-solid fa-comments-dollar"></i>
+                    <h3>Money-Back Guarantee</h3>
+                    <p>If an item arrived damaged or you've <br>
+                        changed your mind, you can send it <br>
+                        back for a full refund.</p>
+                </div>
+                <div class="choosing">
+                    <i class="fa-brands fa-slack"></i>
+                    <h3>Finest Quality</h3>
+                    <p>Designed to last, each of our products has <br>
+                        been crafted with the finest materials.</p>
+                </div>
+                <div class="choosing">
+                    <i class="fa-regular fa-handshake"></i>
+                    <h3>Easy Payments</h3>
+                    <p>All payments are processed instantly <br>
+                        over a secure payment protocol.</p>
+                </div>
+            </div>
+        </div>
+
+            
+        <div class="products-inToday">
+            <div>
+                <h1>Products in today</h1>
+            </div>
+            <div class="inToday-cart">
+                <div>
+                    <img src="./imgs/AdobeStock_118120200.png" alt="">
+                    <p>Basic Slim Fit T-Shirt</p>
+                    <h2 >$79.99</h2>
+                </div>
+                <div>
+                    <img src="./imgs/AdobeStock_136908398.png" alt="">
+                    <p>Loose Textured T-Shirt</p>
+                    <h2 >$79.99</h2>
+                </div>
+                <div>
+                    <img src="./imgs/AdobeStock_173519034.png" alt="">
+                    <p>T-Shirt Summer Vibes</p>
+                    <h2 >$79.99</h2>
+                </div>
+                <div>
+                    <img src="./imgs/AdobeStock_236655481.png" alt="">
+                    <p>Loose Knit 3/4 Sleeve</p>
+                    <h2 >$79.99</h2>
+                </div>
+            </div>
+        </div>
+
+
+    <div class="container-foot">
+        <div class="footer">
+            <div class="footer-one">
+                <div class="f-title">
+                    <h2>Lorem ipsum dolor sit amet<br> consectetur adipisicing elit. Eaque, </h2>
+                </div>
+                <div class="f-inputs">
+                    <input type="text" placeholder="Enter your email">
+                    <button class="btns">submit</button>
+                </div>
+            </div>
+
+
+
+            <div class="footer-tow">
+                <div class="f2">
+                    <div class="f2-title">
+                        <h1>E-SHOP</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        <div class="social-media">
+                            <ul>
+                                <li><i class="fa-brands fa-instagram"></i></li>
+                                <li><i class="fa-brands fa-facebook"></i></li>
+                                <li><i class="fa-solid fa-location-dot"></i></li>
+                                <li><i class="fa-brands fa-twitter"></i></li>
+                                <li><i class="fa-brands fa-linkedin"></i></li>
+                                <li><i class="fa-brands fa-youtube"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="f2">
+                <li>Shopping online</li>
+                <li>Order Status</li>
+                <li>Shipping and Delivery</li>
+                <li>Returns</li>
+                <li>Payment Options</li>
+                <li>Contact Us</li>
+            </ul>
+                <ul class="f2">
+                <li>Information</li>
+                <li>Gift Cards</li>
+                <li>Find a store</li>
+                <li>Newsletter</li>
+                <li>Bacome a member</li>
+                <li>Site feedback</li>
+            </ul>
+                <ul class="f2">
+                <li>Contact</li>
+                <li>store@uikit.com</li>
+                <li>Hotline: +1 131 138 138</li>
+            </ul>
+            </div>
+        </div>
+    </div>
+<!-- 
+    <i class="fa-regular fa-handshake"></i>
+    <i class="fa-solid fa-comments-dollar"></i>
+    <i class="fa-solid fa-truck-fast"></i>
+-->
+<script src="main.js"></script>
+</body>
+</html>
