@@ -23,7 +23,7 @@ pr? myArray = JSON.parse(pr) : myArray = [];
 
 imgsOptions.forEach(e=>{
     e.addEventListener('click', e=>{
-        displayImg.src =`./imgs/${e.target.dataset.color}.png `
+        displayImg.src =`./${e.target.dataset.color}.png `
         myColor = e.target.dataset.color
         
     })
@@ -68,7 +68,7 @@ localStorage.setItem('myProdutes' , JSON.stringify(myArray) );
 creatBasket();
 sizing.value = '';
 numberInput.value = 1;
-displayImg.src = './imgs/white.png'
+displayImg.src = './white.png'
 
 
   })
