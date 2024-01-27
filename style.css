@@ -345,8 +345,7 @@ button{
 
 .cart{
     position: absolute;
-    top: 74px;
-    right: -100vw;
+    top: -100% ;
     overflow-y: scroll;
     height: 100vh;
     background-color: white;
@@ -356,7 +355,8 @@ button{
     transition: .8s;
 }
 .show{
-    right: 0vw;
+    top: 10%;
+    position: fixed;
 }
 .cart .cartTitle h1{
     text-align: center;
